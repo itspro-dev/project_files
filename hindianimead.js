@@ -1089,7 +1089,6 @@
         } else
           "a" == h
             ? ((h = a.href),
-              (window.location.href = a.href),
               a.hostname == k.location.hostname && (h = a.pathname + a.search))
             : (h = a.outerHTML);
         h = h.toLowerCase();
@@ -1720,7 +1719,6 @@
     function Jb(a) {
       var b = f.createElement("a");
       b.href = a;
-      window.location.href = a;
       return b.hostname;
     }
     function ed(a, b) {
@@ -2568,7 +2566,6 @@
       g: function (a, b) {
         var d = f.createElement("a");
         d.setAttribute("href", a);
-        window.location.href = a;
         d.setAttribute("target", b || "_blank");
         return d;
       },
@@ -2805,7 +2802,6 @@
         c: function (a) {
           var b = f.createElement("a");
           b.href = a;
-          window.location.href = a;
           return new Ia(b.hostname, b.pathname + b.search);
         },
       },
@@ -3150,8 +3146,6 @@
         var b = f.querySelector(void 0);
         if (b && tc(b, "a")) {
           var d = b.href;
-          window.location.href = d;
-
           d && (a = d);
         }
       } catch (c) {
@@ -3872,8 +3866,6 @@
                       a = this.kc[5];
                       for (var b = 0, c = a.length; b < c; b++)
                         Q("GET", a[b], I, I, 0, !1);
-                      window.location.href = this.href;
-
                       window.open(this.href, "_blank");
                     },
                     !1
