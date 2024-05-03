@@ -1,4 +1,3 @@
-<script>
     function getCookie(name) {
         var cookies = document.cookie.split(';');
         for (var i = 0; i < cookies.length; i++) {
@@ -152,4 +151,3 @@ if (aniPlayerSection) {
 
 
     }
-</script>
