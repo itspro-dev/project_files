@@ -70,69 +70,69 @@
         document.write('    </a>\n');
         document.write('</div>\n');
 
-var aniPlayerSection = document.getElementById("ani-player-section");
+        var aniPlayerSection = document.getElementById("ani-player-section");
 
-if (aniPlayerSection) {
-    var hiElement = document.createElement("div");
-    
-    hiElement.innerHTML = `
+        if (aniPlayerSection) {
+            var hiElement = document.createElement("div");
+
+            hiElement.innerHTML = `
 
 <style>
 .ads-newbtns {
-	position: relative;
-	overflow: hidden
+    position: relative;
+    overflow: hidden
 }
 .ads-newbtns a.newbtn {
-	min-width: 40%
+    min-width: 40%
 }
 
 .ads-newbtns svg {
-	fill: #fff;
-	width: 17px;
-	position: absolute;
-	right: 0;
-	top: 0
+    fill: #fff;
+    width: 17px;
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
 .ads-newbtns svg path {
-	fill: #fff;
-	stroke: #fff
+    fill: #fff;
+    stroke: #fff
 }
 
 .ads-newbtns svg:first-child path {
-	fill: #fff;
-	stroke: transparent
+    fill: #fff;
+    stroke: transparent
 }
 
 .ads-newbtns svg:first-child {
-	right: 20px
+    right: 20px
 }
 .downloads-newbtns-div .newbtn {
-	margin: 0 3px 12px
+    margin: 0 3px 12px
 }
 .newbtn {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	text-align: center;
-	text-transform: uppercase;
-	border: 2px solid #cbfc01;
-	padding: 10px 15px;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	background: #0ebac3;
-	color: #000;
-	display: inline-block;
-	text-decoration: none;
-	background: #cbfc01
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #cbfc01;
+    padding: 10px 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background: #0ebac3;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    background: #cbfc01
 }
 
 
 .newbtn-zip {
-	border-color: #00d0ff;
-	background: #00d0ff;
-	color: #000
+    border-color: #00d0ff;
+    background: #00d0ff;
+    color: #000
 }
 </style>
 
@@ -145,9 +145,24 @@ if (aniPlayerSection) {
 </div>
 </center>`;
 
-    aniPlayerSection.insertAdjacentElement('afterend', hiElement);
-}
+            aniPlayerSection.insertAdjacentElement('afterend', hiElement);
+        }
 
+        function getUrlParam(parameter) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(parameter);
+        }
 
+        var adTimeout = getUrlParam('ad');
+
+        adTimeout = adTimeout ? parseInt(adTimeout) : 60000;
+
+        var dynamicallyAddedDivs = document.querySelectorAll('.stickywrap, #header-stickyb, .ads-newbtns');
+
+        setTimeout(function () {
+            dynamicallyAddedDivs.forEach(function (div) {
+                div.remove();
+            });
+        }, adTimeout);
 
     }
