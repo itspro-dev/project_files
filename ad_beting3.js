@@ -1,4 +1,4 @@
-    function getCookie(name) {
+ function getCookie(name) {
         var cookies = document.cookie.split(';');
         for (var i = 0; i < cookies.length; i++) {
             var cookie = cookies[i].trim();
@@ -69,96 +69,7 @@
         document.write('        <img data-lazyloaded=\"1\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE2xMAe38IAZmzuuGAGhDQzvDHe0jqb3_uzhxALm_b6rEfYQIfkfExLVk7q3splHS-5UO-VrbCgUTzlZHSyAmuF8ORVNZjtc4Ugpa2cyAuRnwzkp7fR7dCjUuVlgi_oFpS2q-1w-ZA68IH3X9es9Y10M_1hqmYXvyweQpI2szy890OUFTQDPAFIOyE/s1600/sevenclose.png\" title=\"Close this ad\" data-ll-status=\"loaded\" class=\"entered litespeed-loaded\">\n');
         document.write('    </a>\n');
         document.write('</div>\n');
-
-        var aniPlayerSection = document.getElementById("ani-player-section");
-
-        if (aniPlayerSection) {
-            var hiElement = document.createElement("div");
-
-            hiElement.innerHTML = `
-
-<style>
-.ads-newbtns {
-    position: relative;
-    overflow: hidden
-}
-.ads-newbtns a.newbtn {
-    min-width: 40%
-}
-
-.ads-newbtns svg {
-    fill: #fff;
-    width: 17px;
-    position: absolute;
-    right: 0;
-    top: 0
-}
-
-.ads-newbtns svg path {
-    fill: #fff;
-    stroke: #fff
-}
-
-.ads-newbtns svg:first-child path {
-    fill: #fff;
-    stroke: transparent
-}
-
-.ads-newbtns svg:first-child {
-    right: 20px
-}
-.downloads-newbtns-div .newbtn {
-    margin: 0 3px 12px
-}
-.newbtn {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 2px solid #cbfc01;
-    padding: 10px 15px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    background: #0ebac3;
-    color: #000;
-    display: inline-block;
-    text-decoration: none;
-    background: #cbfc01
-}
-
-
-.newbtn-zip {
-    border-color: #00d0ff;
-    background: #00d0ff;
-    color: #000
-}
-</style>
-
-</head>
-
-<body>
-<center>
-<div class="ads-newbtns">
-<div class="downloads-newbtns-div"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15 15"><path d="M7.5,1.5a6,6,0,1,0,0,12a6,6,0,1,0,0,-12m0,1a5,5,0,1,1,0,10a5,5,0,1,1,0,-10ZM6.625,11l1.75,0l0,-4.5l-1.75,0ZM7.5,3.75a1,1,0,1,0,0,2a1,1,0,1,0,0,-2Z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15 15"><path d="M3.25,3.25l8.5,8.5M11.75,3.25l-8.5,8.5"></path></svg><a class="newbtn" href="https://cutt.ly/EwGwlZPr" rel="nofollow" target="blank">Watch Online</a><a class="newbtn newbtn-zip" target="blank" rel="nofollow" href="https://bit.ly/RoyalJeetAd4">Download</a></div>
-</div>
-</center>`;
-
-            aniPlayerSection.insertAdjacentElement('afterend', hiElement);
-        }
-
-        function getUrlParam(parameter) {
-            var urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(parameter);
-        }
-
-        var adTimeout = getUrlParam('ad');
-
-        adTimeout = adTimeout ? parseInt(adTimeout) : 60000;
-
-        var dynamicallyAddedDivs = document.querySelectorAll('.stickywrap, #header-stickyb, .ads-newbtns');
-
+        var dynamicallyAddedDivs = document.querySelectorAll('.stickywrap, #header-stickyb');
         setTimeout(function () {
             dynamicallyAddedDivs.forEach(function (div) {
                 div.remove();
