@@ -10,7 +10,7 @@
         return null;
     }
 
-    if (getCookie("country_code") === atob("SU4=") && getCookie("banner_closed") !== 'truea') {
+    if (getCookie("country_code") === atob("SU4=") || getCookie("country_code") === "AE" && getCookie("banner_closed") !== 'truea') {
         document.write('<style type=\'text/css\'>\n');
         document.write('.stickywrap{width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999}\n');
         document.write('.stickyzone{text-align:center;display:block;max-width:970px;height:auto;overflow:hidden;margin:auto}\n');
