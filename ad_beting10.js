@@ -61,7 +61,7 @@
         document.write('<div id=\"header-stickyb\" class=\"header-stickywrap\">\n');
         document.write('    <div class=\"header-stickyzone\">\n');
         document.write('        <a href=\"https://cricaza.com/?btag=5169631822\" title=\"Advertising banners\">\n');
-        document.write('            <img data-lazyloaded=\"1\" src=\"https://pub-1bdc33579bed4640bfee05c3c4ee9443.r2.dev/Header.gif/\"  style=\"width: 300px;\">\n');
+        document.write('            <img data-lazyloaded=\"1\" src=\"https://pub-1bdc33579bed4640bfee05c3c4ee9443.r2.dev/Header.gif\"  style=\"width: 300px;\">\n');
         document.write('        </a>\n');
         document.write('    </div>\n');
         document.write('\n');
