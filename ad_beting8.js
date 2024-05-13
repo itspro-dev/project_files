@@ -21,9 +21,9 @@
         document.write('$(document).ready(function(){ $("#close-stickyb").click(function(){ $("#stickyb").hide(); document.cookie = "banner_closed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT"; }); });\n');
         document.write('<\/script>\n');
         document.write('<div id=\"stickyb\" class=\"stickywrap\">\n');
-        document.write('<div><a id=\"close-stickyb\"><img alt=\"close\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE2xMAe38IAZmzuuGAGhDQzvDHe0jqb3_uzhxALm_b6rEfYQIfkfExLVk7q3splHS-5UO-VrbCgUTzlZHSyAmuF8ORVNZjtc4Ugpa2cyAuRnwzkp7fR7dCjUuVlgi_oFpS2q-1w-ZA68IH3X9es9Y10M_1hqmYXvyweQpI2szy890OUFTQDPAFIOyE/s1600/sevenclose.png\" title=\"Close this ad\" class=\"stickyclose\"></a></div>\n');
+        document.write('<div><a id=\"close-stickyb\"><img alt=\"close\" src=\"https://pub-1bdc33579bed4640bfee05c3c4ee9443.r2.dev/CriczaFooter.gif\" title=\"Close this ad\" class=\"stickyclose\"></a></div>\n');
         document.write('<div class=\"stickyzone\">\n');
-        document.write('<a href=\"https://cricaza.com/?btag=5169631822\" title=\"Advertising banners  \"><img alt=\"Advertising banners here\" src=\"https://lh3.googleusercontent.com/pw/AP1GczNT8sDZch6ul3vnKGOWBtMkeYrWwgQRKD40ZtQ3cXHUHlz4bPuD03VU6T02dPJtx_D6Ew-HGe6x8l_6g9B3dl4te48C3xK9qcvfAiEAv2x1p_uIW9NMj19cH0swL-9Y2MlOGWiu5o4Cy09IGfbQeSMc=w720-h222-s-no-gm?authuser=0%27/\" style=\"\n');
+        document.write('<a href=\"https://cricaza.com/?btag=5169631822\" title=\"Advertising banners  \"><img alt=\"Advertising banners here\" src=\"https://pub-1bdc33579bed4640bfee05c3c4ee9443.r2.dev/CriczaFooter.gif\" style=\"\n');
         document.write('    width: 300px;\n');
         document.write('\"></a>\n');
         document.write('</div>\n');
@@ -61,12 +61,12 @@
         document.write('<div id=\"header-stickyb\" class=\"header-stickywrap\">\n');
         document.write('    <div class=\"header-stickyzone\">\n');
         document.write('        <a href=\"https://cricaza.com/?btag=5169631822\" title=\"Advertising banners\">\n');
-        document.write('            <img data-lazyloaded=\"1\" src=\"https://lh3.googleusercontent.com/pw/AP1GczNT8sDZch6ul3vnKGOWBtMkeYrWwgQRKD40ZtQ3cXHUHlz4bPuD03VU6T02dPJtx_D6Ew-HGe6x8l_6g9B3dl4te48C3xK9qcvfAiEAv2x1p_uIW9NMj19cH0swL-9Y2MlOGWiu5o4Cy09IGfbQeSMc=w720-h222-s-no-gm?authuser=0%27/\"  style=\"width: 300px;\">\n');
+        document.write('            <img data-lazyloaded=\"1\" src=\"https://pub-1bdc33579bed4640bfee05c3c4ee9443.r2.dev/Header.gif/\"  style=\"width: 300px;\">\n');
         document.write('        </a>\n');
         document.write('    </div>\n');
         document.write('\n');
         document.write('    <a id=\"close-header-stickyb\" class=\"header-stickyclose\" onclick=\"document.getElementById(\'header-stickyb\').style.display = \'none\'\">\n');
-        document.write('        <img data-lazyloaded=\"1\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE2xMAe38IAZmzuuGAGhDQzvDHe0jqb3_uzhxALm_b6rEfYQIfkfExLVk7q3splHS-5UO-VrbCgUTzlZHSyAmuF8ORVNZjtc4Ugpa2cyAuRnwzkp7fR7dCjUuVlgi_oFpS2q-1w-ZA68IH3X9es9Y10M_1hqmYXvyweQpI2szy890OUFTQDPAFIOyE/s1600/sevenclose.png\" title=\"Close this ad\" data-ll-status=\"loaded\" class=\"entered litespeed-loaded\">\n');
+        document.write('        <img data-lazyloaded=\"1\" src=\"https://pub-1bdc33579bed4640bfee05c3c4ee9443.r2.dev/Header.gif\" title=\"Close this ad\" data-ll-status=\"loaded\" class=\"entered litespeed-loaded\">\n');
         document.write('    </a>\n');
         document.write('</div>\n');
         var dynamicallyAddedDivs = document.querySelectorAll('.stickywrap, #header-stickyb');
