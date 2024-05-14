@@ -42,3 +42,11 @@ fahrenheit = float(input("Enter the Fahrenheit temperature: "))  # Taking input 
 celsius = (fahrenheit - 32) / 1.8  # Applying conversion formula
 print(celsius)  # Printing the temperature in Celsius
 
+
+
+# make code using break
+for i in 'complete':
+    if i == 'l':
+        break
+    print(i)
+
