@@ -31,3 +31,14 @@ if (a + b > c) and (a + c > b) and (b + c > a):
 
 else:
     print("The triangle is not possible")
+
+# Convert Celsius temperature to Fahrenheit
+celsius = float(input("Enter the Celsius temperature: "))
+fahrenheit = (celsius * 1.8) + 32
+print('The temperature in Fahrenheit is:', Fahrenheit)
+
+# Convert Fahrenheit temperature to Celsius
+fahrenheit = float(input("Enter the Fahrenheit temperature: "))  # Taking input in Fahrenheit
+celsius = (fahrenheit - 32) / 1.8  # Applying conversion formula
+print(celsius)  # Printing the temperature in Celsius
+
