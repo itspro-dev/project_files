@@ -71,3 +71,18 @@ else:
     print("The factorial of", number, "is:", factorial)
 
 
+# code to find factorial of a single number with function
+number = int(input("Enter factorial number: "))
+def factorial(num) :
+    factorial = 1
+
+    if(num < 0) :
+        print("factorial doesnt exist for this number or nagitive number try again with diffrent number")
+    elif num == 0 :
+        print("the factorial num of 0 is : ", 1)
+    else : 
+        for i in range(1, num+1) :
+            factorial = factorial * i
+        print(factorial)
+
+factorial(number)
