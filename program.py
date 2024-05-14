@@ -48,5 +48,11 @@ print(celsius)  # Printing the temperature in Celsius
 for i in 'complete':
     if i == 'l':
         break
+    print(I)
+    
+# make code using continue
+for i in 'complete' :
+    if i == 'l':
+        continue
     print(i)
 
