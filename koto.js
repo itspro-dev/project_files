@@ -21,7 +21,7 @@
         let totalTimeSpent = parseInt(getCookieMy('timeOnPage')) || 0;
         let popunderShownAt = getCookieMy('popunderShownAt') || null;
 
-        if (popunderShownAt && new Date().getTime() - popunderShownAt < 12 * 60 * 60 * 1000) {
+        if (popunderShownAt && new Date().getTime() - popunderShownAt < Anihour * 60 * 60 * 1000) {
             return;
         }
         
@@ -29,13 +29,13 @@
             let currentTime = new Date().getTime();
             totalTimeSpent += (currentTime - startTime) / 1000;
             startTime = currentTime;
-            setCookieMy('timeOnPage', totalTimeSpent, 12);
+            setCookieMy('timeOnPage', totalTimeSpent, Anihour);
             if (totalTimeSpent >= timeOnPage) {
                 clearInterval(timer);
                 document.addEventListener('click', function () {
                     if (!popunderShownAt) {
                         window.open(AniKoto, "_blank");
-                        setCookieMy('popunderShownAt', new Date().getTime(), 12);
+                        setCookieMy('popunderShownAt', new Date().getTime(), Anihour);
                         setCookieMy('timeOnPage', 0, -1);
                     }
                 });
