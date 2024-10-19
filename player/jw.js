@@ -1,5 +1,5 @@
 /*!
-JW Player version 8.21.1.1
+JW Player version 8.21.1.11
 Copyright (c) 2021, JW Player, All Rights Reserved
 This source code and its use and distribution is subject to the terms
 and conditions of the applicable license agreement.
